@@ -124,10 +124,11 @@
   table.plan .note { color: var(--muted); font-size: 10.5px; margin-top: 2px; }
 
   /* --- Form controls --- */
-  .field { display: flex; flex-direction: column; gap: 5px; }
+  .field { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
   .field label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; }
   .field input, .field select {
     border: 1px solid var(--line); border-radius: 3px; padding: 9px 10px; background: var(--paper); color: var(--ink);
+    width: 100%; min-width: 0; box-sizing: border-box;
   }
   .field input:focus, .field select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
   .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
